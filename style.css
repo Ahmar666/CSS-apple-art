@@ -1,0 +1,181 @@
+:root{
+    --apple-border:#44443c;
+    --apple-inside:#cc0c0d;
+    --apple-shadow:#a42621;
+    --apple-stem:#8e562e;
+    --apple-highlight:#f9f8f8;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: gray;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    display:grid;
+    grid-template-rows: repeat(17,30px);
+    grid-template-columns: repeat(14,30px);
+    height:100vh;
+    margin:auto 0;
+    
+}
+.apple-border-left{
+    grid-area: 9/ 2/ 13/ 3;
+    background-color: var(--apple-border);
+}
+.apple-border-right{
+    grid-area: 9/ -2/ 13/ -3;
+    background-color: var(--apple-border);
+}
+.apple-border-left-slightly-bottom{
+    grid-area:13/ 3/ 15/ 4;
+    background-color: var(--apple-border);
+}
+.apple-border-right-slightly-bottom{
+    grid-area:13/ -3/ 15/ -4;
+    background-color: var(--apple-border);
+}
+.apple-border-left-slightly-top{
+    grid-area:7/ 3/ 9/ 4;
+    background-color: var(--apple-border);
+}
+.apple-border-right-slightly-top{
+    grid-area:7/ -3/ 9/ -4;
+    background-color: var(--apple-border);
+}
+.apple-border-left-middle-bottom{
+    grid-area:  15/ 4/ 16/ 5;
+    background-color: var(--apple-border);
+}
+.apple-border-right-middle-bottom{
+    grid-area:  15/ -4/ 16/ -5;
+    background-color: var(--apple-border);
+}
+.apple-border-bottom-left{
+    grid-area:  16/ 5/ 17/ 7;
+    background-color: var(--apple-border);
+}
+.apple-border-bottom-right{
+    grid-area:  16/ -5/ 17/ -7;
+    background-color: var(--apple-border);
+}
+.apple-border-bottom{
+    grid-area:  15/ 7/ 16/ 9;
+    background-color: var(--apple-border);
+}
+.apple-border-top-left{
+    grid-area:6/ 4/ 6/ 6;
+    background-color: var(--apple-border);
+}
+.apple-border-top-right{
+    grid-area:6/ -4/ 6/ -6;
+    background-color: var(--apple-border);
+}
+.apple-border-top-left-final{
+    grid-area:5/ 6/ 5/ 8;
+    background-color: var(--apple-border);
+}
+.apple-border-top-right-final{
+    grid-area:5/ -6/ 5/ -7;
+    background-color: var(--apple-border);
+}
+.apple-inside-middle-1{
+    grid-area: 9/ 3/ 13/ -3;
+    background-color: var(--apple-inside);
+}
+.apple-inside-slightly-bottom{
+    grid-area:13/ 4/ 15/ -4;
+    background-color: var(--apple-inside);
+}
+.apple-inside-slightly-top{
+    grid-area:7/ 4/ 9/ -4;
+    background-color: var(--apple-inside);
+}
+.apple-inside-top{
+    grid-area:6/ 6/ 6/ 10;
+    background-color: var(--apple-inside);
+}
+.apple-highlight-square{
+    grid-area:9/ 4/11/6 ;
+    background-color: var(--apple-highlight);
+}
+.apple-highlight-line{
+    grid-area:8/ 5/ 8/ 7 ;
+    background-color: var(--apple-highlight);
+}
+.apple-inside-stem{
+    grid-area: 6/ 7 / 7/ 9;
+    background-color: var(--apple-stem);
+}
+.apple-outside-stem-3{
+    grid-area: 3/ 8 / 6/ 9;
+    background-color: var(--apple-stem);
+}
+.apple-outside-stem-2{
+    grid-area: 2/ 9 / 4/ 10;
+    background-color: var(--apple-stem);
+}
+.apple-shadow-bottom-bottom-left{
+    grid-area:-3 / 5/ -4/ 7 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-bottom-bottom-right{
+    grid-area:-3 / 9/ -4/ 11 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-bottom-middle{
+    grid-area:-4 / 4/ -5/ 12 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-bottom-top-left{
+    grid-area:-5 / 4/ -6/ 5 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-bottom-top-right{
+    grid-area:-5 / -7/ -6/ -4 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-middle-bottom{
+    grid-area:-6 / -6/ -7/ -3 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-middle{
+    grid-area:-7 / -5/ -10/ -3 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-top-right{
+    grid-area:-12 / -5/ -10/ -4 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-top-right-right{
+    grid-area:-12 / -6/ -12/ -4 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-top-right-middle{
+    grid-area:6 / 9/ 7/ 9 ;
+    background-color: var(--apple-shadow);
+}
+.apple-shadow-top-right-left{
+    grid-area:7 / 8/ 8/ 8 ;
+    background-color: var(--apple-shadow);
+}
+/* .upper-border{
+    grid-area:1 /1 /2 /-1 ;
+    background-color: #211c1c;
+}
+.bottom-border{
+    grid-area:-1 / 1/-2 /-1 ;
+    background-color: #211c1c;
+}
+.left-border{
+    grid-area: 1/1/ -1/2;
+    background-color: #211c1c;
+}
+.right-border{
+    grid-area: 1/-1/ -1/-2;
+    background-color: #211c1c;
+} */
